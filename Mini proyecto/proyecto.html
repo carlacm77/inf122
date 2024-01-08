@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleproy.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido al Mini Proyecto</h1>
+    <p>Este proyecto muestra la integracion de conceptos de HTML, CSS y JavaScript</p>
+    <h2>To Do List</h2>
+    <ul id="tarea-lista">
+        <li>Aprender a usar GitHub</li>
+        <li>Aprender a usar VSCode</li>
+    </ul>
+    <input type="text" name="text" id="nueva-tarea" value="Agregar nueva tarea">
+    <button onclick="agregarTarea()" id="botonTarea">Agregar Tarea</button>
+    <script>
+        function agregarTarea()
+        {
+            var tarea=document.getElementById("nueva-tarea").value;
+            var nuevoItem=document.createElement("li"); //crea un elemnto en li y lo guarda en nuevoItem
+            nuevoItem.textContent=tarea;
+            document.getElementById("tarea-lista").appendChild(nuevoItem) //le agrga un "hijo" al id trea lista que es el ul, que es nuevo item
+            document.getElementById("nueva-tarea").value=""; //hace que el inpùt(del cual el id es nueva-tarea) quede en blanco(value="")
+        }
+    </script>
+</body>
+</html>
