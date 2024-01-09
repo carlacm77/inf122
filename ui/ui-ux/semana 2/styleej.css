@@ -1,0 +1,94 @@
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --purple:#6F2CFF;
+    --light-purple:#EFE9F9;
+    --red-herat:#A50954;
+    --blue-heart: #ACD9B2;
+    --sm:14px;
+    --md:20px;
+    --lg:60px;
+
+}
+body{
+    font-family: 'Nunito';
+    margin: 0;
+    
+
+}
+.main{
+    width: 100%;     /*dice que ocupe el 100% de la pagina*/
+    height: 100vh;
+    place-items: center;
+    background-color: var(--white);   /*usamos las variables definidas anteriormente*/
+
+}
+.brochure{
+    display: grid;
+    grid-template-rows: auto 1fr auto;  /* si fuera 2fr 1fr que sea 2 renglones la primera 2 fracciones de la pagina y la segunda 1 fraccion*/
+    width: 100%;                    /* si fuera auto 1fr auto seria 3 filas la primera atomatica la segunda 1 fraccion y la tercera automatica*/
+    justify-items: center;
+    background-color: var(--white);
+
+}
+.title {
+    color: var(--black);
+    text-align: center;
+    font-size: var(--lg);   /*fon size large*/
+}
+
+.subtitle {
+    color: var(--black);
+    text-align: center;
+    font-size: var(--md);   /*fon size midium*/
+    margin: 5px 0 5px 0;    /*los margenes se declaran en sentido horario*/
+}
+.primary-button {
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;            /*los botones por defecto vienen con borde aqui se lo quitamos*/
+    border-radius: 5px;      /*para que sea redondo*/
+    padding: 10px 20px;      /*los margenes se declaran en sentido horario*/
+    font-size: var(--md);
+    cursor: pointer;         /*de forma que al pasar con el cursor salga una mano*/
+    margin: 100px 0 100px 0;
+}
+.more-info {
+    display: grid;
+    background-color: var(--light-purple);
+    width: 100%;           
+}
+.card-container {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    margin: 16px 0 16px 0;
+}
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /*en lugar de poner 1fr 1fr*/
+    margin: 50px 260px 50px 260px;
+    justify-content: center;
+}
+.card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px;
+}
+.card-icon figure img {        /*para acceder a la figure img de card icon*/
+    width: 50px;
+    height: 50px;
+}
+.icon-text h2 {                   /*para acceder a la etiqueta h2 de icon text*/
+    font-size: var(--sm);
+    margin: 0;
+}
+.icon-text p {
+    font-size: var(--sm);
+    margin: 0;
+}
