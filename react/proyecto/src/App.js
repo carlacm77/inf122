@@ -24,6 +24,10 @@ function App() {
     setNumClicks(nroClicks -1);
     console.log("click");
   }
+  const clickMul2=()=>{
+    setNumClicks(nroClicks *2);
+    console.log("click");
+  }
   const reiniciar=()=>{
     setNumClicks(0);
     console.log("reiniciar");
@@ -43,6 +47,7 @@ function App() {
             <Boton texto="+3" esBotonClick={true} funcionClick={clickMas3}/>
             <Boton texto="-1" esBotonClick={true} funcionClick={clickMenos1}/>
             <Boton texto="+1" esBotonClick={true} funcionClick={clickMas1}/>
+            <Boton texto="x2" esBotonClick={true} funcionClick={clickMul2}/>
           </div>
           <Boton texto="Reiniciar" esBotonClick={false} funcionClick={reiniciar}/>
           <Boton texto="Mostrar/Ocultar" esBotonClick={false} funcionClick={mostrar}/>
