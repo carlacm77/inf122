@@ -5,25 +5,35 @@ import {useState} from 'react';
 
 function Lista(){
     const [notas, setNotas]= useState([]);
-    const [texto, setTexto]= useState("");
+    const [nuevaNota, setNuevaNota]= useState('');
     const addNota=()=>{
-        setNotas([...notas, texto])
-        console.log(notas);
-
+        if (nuevaNota.trim() === '') return;
+        setNotas([...notas, { id: Date.now(), texto: nuevaNota }]);
+        setNuevaNota('');
       }
-    const onEdit=()=>{
-        console.log("edit");
+    
+    const eliminarNota=(id)=>{
+        setNotas((prevNotas) => prevNotas.filter((nota) => nota.id !== id));
+        
       }
-    const onDelete=()=>{
-        console.log("delete");
-      }
+    const editarNota = (id, nuevoTexto) => {
+        setNotas((prevNotas) =>
+            prevNotas.map((nota) => (nota.id === id ? { ...nota, texto: nuevoTexto } : nota))
+        );
+    };
     return (
         <div className="lista-de-notas">
-            <input type="text" name="text" className="add-nota" value={texto} onChange={(e) => setTexto(e.target.value)}/>
+            <input type="text" name="text" className="add-nota" value={nuevaNota} onChange={(e) => setNuevaNota(e.target.value)}/>
             <button className="boton-nota" onClick={addNota}>Agregar Nota</button>
         <div className="note">
-            
-            <Nota nota="Hola" onEdit={onEdit} onDelete={onDelete}/>
+            {notas.map((nota) => (
+                <Nota
+                    key={nota.id}
+                    nota={nota}
+                    onDelete={eliminarNota}
+                    onEdit={editarNota}
+                />
+            ))}
         </div>
         </div>
     );
