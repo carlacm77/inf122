@@ -22,10 +22,9 @@ function Lista(){
         );
     };
     return (
-        <div className="lista-de-notas">
+        <div className="contenedor-principal">
             <input type="text" name="text" className="add-nota" value={nuevaNota} onChange={(e) => setNuevaNota(e.target.value)}/>
-            <button className="boton-nota" onClick={addNota}>Agregar Nota</button>
-        <div className="note">
+            <button className="boton" onClick={addNota}>Agregar Nota</button>
             {notas.map((nota) => (
                 <Nota
                     key={nota.id}
@@ -34,7 +33,6 @@ function Lista(){
                     onEdit={editarNota}
                 />
             ))}
-        </div>
         </div>
     );
 }
