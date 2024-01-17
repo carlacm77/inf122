@@ -1,11 +1,11 @@
-import React from "react"  
-
+import React from 'react';
 import '../styles/Tablero.css';
-import Cuadro from './Cuadro'
-function Tablero({cuadros, onclick}){
-    function renderizarCuadro(i){
-        return(
-            <Cuadro valor={cuadros[i]} funcionClick={()=>onclick(i)}/>
+import Cuadro from './Cuadro';
+
+function Tablero({cuadros, onClick }) {
+    function renderizarCuadro(i) {
+        return (
+            <Cuadro valor={cuadros[i]} funcion={() => onClick(i)}/>
         );
     }
 
@@ -25,9 +25,6 @@ function Tablero({cuadros, onclick}){
         </div>
     );
 }
-
 export default Tablero;
-
-
 
       
