@@ -1,0 +1,7 @@
+.juego {
+    display: flex;
+    flex-direction: row;
+}
+.juego-tablero{
+    margin-right: 50px;
+}

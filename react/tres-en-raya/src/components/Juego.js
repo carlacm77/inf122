@@ -1,6 +1,7 @@
 import React from 'react';
 import Tablero from './Tablero';
 import Historial from './Historial';
+import '../styles/Juego.css';
 import { useState } from 'react';
 
 function Juego() {
