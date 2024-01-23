@@ -1,10 +1,10 @@
 
 import './App.css';
-import Juego from './components/Juego.js'
+import JuegoA from './components/JuegoA.js'
 function App() {
   return (
     <div className="App">
-      <Juego/>
+      <JuegoA/>
     </div>
   );
 }
