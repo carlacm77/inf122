@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contenedor img{
+    border-radius: 50%;
+    object-fit: cover;                  /*cubre todo el contenedor*/
+}
