@@ -14,7 +14,7 @@ function About ({type,height,weight,abilities}){
                 <div className={style.atributo}>
                     <p >Type</p>
                     <p >Height</p>
-                    <p >Height</p>
+                    <p >Weight</p>
                     <p >Abilities</p>
                 </div>    
                 <div className={style.caract}>
