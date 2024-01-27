@@ -5,6 +5,7 @@
     align-items: center;
     border-radius: 20px;
     background: var(--secondary-background);
+    opacity: 0.7;
     gap: 50px;
 }
 
@@ -20,7 +21,7 @@
 
 .tabs-background-item-active {
     border-radius: 10px;
-    background: var(--primary-background);
+    background: var(--second-purple);
     border: none;
     margin: 24px;
     width: 300px;
@@ -29,7 +30,7 @@
 }
 
 .tabs-background-item-text {
-    color: var(--secondary-clear);
+    color: var(--primary-background);
     font-size: var(--sm);
     font-weight: 500;
     line-height: normal;

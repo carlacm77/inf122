@@ -7,7 +7,7 @@
 }
 
 .fact-item h2 {
-    color: var(--secondary-clear);
+    color: var(--blue);
     font-size: var(--md);
     font-style: normal;
     font-weight: 500;
@@ -16,7 +16,7 @@
 }
 
 .fact-item p {
-    color: var(--secondary-clear);
+    color: var(--blue);
     font-size: var(--sm);
     font-style: normal;
     font-weight: 500;

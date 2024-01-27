@@ -7,7 +7,7 @@
 
 .profile h1 {
     font-size: var(--lg);
-    color: var(--primary-clear);
+    color: var(--dark-blue);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -16,7 +16,7 @@
 
 .profile p {
     font-size: var(--md);
-    color: var(--secondary-clear);
+    color: var(--blue);
     font-style: normal;
     font-weight: 500;
     line-height: normal;

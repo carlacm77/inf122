@@ -19,7 +19,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--yellow);
+    background-color: var(--purple);
     opacity: 0;
 }
 
@@ -38,6 +38,7 @@
     width: 100%;
     height: 100%;
     display: none;
+    color:var(--primary-background);
 }
 
 .content-card-img .content-card-img-overlay:hover+.content-card-img-detail {
@@ -58,6 +59,7 @@
     font-family: Poppins;
     font-size: var(--xs);
     margin-bottom: 20px;
+    
 }
 
 .content-card-img-detail .btn {
