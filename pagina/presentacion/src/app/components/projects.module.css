@@ -8,3 +8,8 @@
     justify-items: center;
 }
 
+@media(max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
