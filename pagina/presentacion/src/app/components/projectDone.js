@@ -10,9 +10,7 @@ function ProjectDone({proyecto,titulo,descripcion}){
                 <p className={style.title}>{titulo}</p>
                 <p className={style.detail}>{descripcion}</p>
                 <button className={style.btn}>
-                    <a href="https://github.com/carlacm7/segundo-parcial-inf122">
-                        <Image className={style["imagen-link"]} src="/imagenes/link.png" alt="link" width={20} height={20}/>
-                    </a>
+                    <Image className={style["imagen-link"]} src="/imagenes/link.png" alt="link" width={20} height={20}/>
                 </button>
             </div>
         </div>         

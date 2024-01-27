@@ -2,13 +2,13 @@ import style from './card.module.css';
 import Foto from "./foto"
 import Iconos from "./iconos"
 
-function Card(){
+function Card({nombre,cargo}){
     return (
         <div className={style.profile}>
-            <Foto/>
+            <Foto foto="foto.jpeg"/>
             <div className={style["profile-info"]}>
-                <h1>Carla Cuevas</h1>
-                <p>Super Juninor Front-end Dev</p>
+                <h1>{nombre}</h1>
+                <p>{cargo}</p>
                 <Iconos/>
             </div>
         </div>

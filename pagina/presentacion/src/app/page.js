@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.container}>
-            <Card/>
+            <Card nombre="Carla Cuevas" cargo="Super Juninor Front-end Dev"/>
             <Facts/>
             <Botones funcionClick={descargar}/>
             <Tab/>
