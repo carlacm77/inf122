@@ -1,0 +1,7 @@
+.facts {
+    display: flex;
+    padding: 20px 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}

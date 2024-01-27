@@ -1,0 +1,44 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile h1 {
+    font-size: var(--lg);
+    color: var(--primary-clear);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.profile p {
+    font-size: var(--md);
+    color: var(--secondary-clear);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+
+@media(max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .profile h1 {
+        font-size: var(--md);
+    }
+
+    .profile p {
+        font-size: var(--xs);
+    }
+}
