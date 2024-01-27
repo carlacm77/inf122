@@ -7,8 +7,8 @@ function Card(){
         <div className={style.profile}>
             <Foto/>
             <div className={style["profile-info"]}>
-                <h1>Victor Alvarado</h1>
-                <p>Software Engineer</p>
+                <h1>Carla Cuevas</h1>
+                <p>Super Juninor Front-end Dev</p>
                 <Iconos/>
             </div>
         </div>

@@ -5,3 +5,13 @@
     align-items: center;
     gap: 90px;
 }
+
+
+@media(max-width: 768px) {
+    
+    .facts {
+        gap: 20px;
+    }
+  
+   
+}

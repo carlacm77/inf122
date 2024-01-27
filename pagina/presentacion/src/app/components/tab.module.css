@@ -15,6 +15,7 @@
     width: 300px;
     height: 80px;
     background: var(--secondary-background);
+    cursor: pointer;
 }
 
 .tabs-background-item-active {
@@ -24,7 +25,7 @@
     margin: 24px;
     width: 300px;
     height: 80px;
-
+    cursor: pointer;
 }
 
 .tabs-background-item-text {
@@ -41,15 +42,20 @@
         gap: 10px;
     }
   
-    .tabs-background-item .tabs-background-item-active {
+    .tabs-background-item  {
         margin: 10px;
-        width: 150px;
+        width: 180px;
         height: 50px;
     }
   
     .tabs-background-item-text {
         font-size: var(--xs);
         font-weight: 300;
+    }
+    .tabs-background-item-active{
+        margin: 10px;
+        width: 180px;
+        height: 50px;
     }
   
 }

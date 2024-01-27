@@ -23,3 +23,17 @@
     line-height: normal;
     text-align: center;
 }
+
+@media(max-width: 768px) {
+    .fact-item {
+        width: 115px;
+    }
+  
+    .fact-item h2 {
+        font-size: var(--xs);
+    }
+  
+    .fact-item p {
+        font-size: var(--xs);
+    }
+}
