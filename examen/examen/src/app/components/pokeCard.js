@@ -17,8 +17,14 @@ function PokeCard (){
     const [attack, setAttack]=useState(0);
     const [defense, setDefense]=useState(0);
     const [speed, setSpeed]=useState(0);
-    
-    const url="https://pokeapi.co/api/v2/pokemon/165";
+
+    const [pokem, setPokem]= useState('pikachu');
+    const [nuevoPokem, setNuevoPokem]= useState('');
+    const buscar=()=>{
+        setPokem(nuevoPokem);
+        setNuevoPokem('');
+        }
+    const url=`https://pokeapi.co/api/v2/pokemon/${pokem}`;
 
     useEffect(()=>{
         fetch(url)
@@ -34,7 +40,7 @@ function PokeCard (){
         setSpeed(data.stats[5].base_stat),
         setType(data.types),
         setAbilities(data.abilities)})
-    },[]);
+    },[pokem]);
   
 
     return(
@@ -42,6 +48,10 @@ function PokeCard (){
             <div className={style.cabeza}>
                 <div className={style.titulo}>
                     <h1 className={style.title}>My Pokemon</h1>
+                    <div>
+                        <input type="text" value={nuevoPokem} onChange={(e) => setNuevoPokem(e.target.value)}/>
+                        <button className="boton" onClick={buscar}>Buscar</button>
+                    </div>
                     <h1 className={style.nombre}>{nombre}</h1>
                 </div>
                 <div className={style.imagen}>
